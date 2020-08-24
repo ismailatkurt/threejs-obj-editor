@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>PlusDental Aligners</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css"/>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div id="control-panel" class="control-panel">
+    <h1 class="uk-heading-divider">Control Panel</h1>
+
+    <form>
+        <div class="uk-margin">
+            <div>
+                <input type="file" id="file" accept=".obj" onchange="loadFile()"/>
+            </div>
+        </div>
+
+        <div>
+<!--            <button onclick="btnSVGExportClick()">Export to SVG</button>-->
+        </div>
+    </form>
+
+<!--    <div>-->
+<!--        <p>-->
+<!--            <label for="file">Select File</label>-->
+<!--            <input type="file" id="file" accept=".obj" onchange="loadFile()"/>-->
+<!--        </p>-->
+<!--    </div>-->
+</div>
+
+<div id="container" class="container"></div>
+
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.min.js"></script>
+<script src="https://threejs.org/examples/js/renderers/SVGRenderer.js"></script>
+<script src="./js/OrbitControls.js"></script>
+<script src="./assets/OBJLoader.js"></script>
+<script src="./assets/MTLLoader.js"></script>
+<script src="./scripts.js"></script>
+</body>
+</html>
